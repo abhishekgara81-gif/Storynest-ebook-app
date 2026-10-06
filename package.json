@@ -1,0 +1,22 @@
+{
+  "name": "ebook-app",
+  "version": "1.0.0",
+  "description": "Full-stack e-book landing page with Express and SQLite backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "ebook",
+    "express",
+    "sqlite",
+    "node"
+  ],
+  "author": "GitHub Copilot",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7"
+  }
+}
