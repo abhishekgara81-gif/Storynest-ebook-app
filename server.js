@@ -12,8 +12,8 @@ const {
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const publicDir = path.join(__dirname, 'public');
-const ebookPath = path.join(__dirname, 'downloads', 'ebook-guide.txt');
+const publicDir = __dirname;
+const ebookPath = path.join(__dirname, 'ebook-guide.txt');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
