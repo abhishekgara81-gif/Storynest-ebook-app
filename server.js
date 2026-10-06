@@ -19,14 +19,17 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Serve the landing page and admin dashboard.
-app.use(express.static(publicDir));
+// यह सभी स्टेटिक फाइलों (styles.css, script.js) को सीधे मुख्य फोल्डर से उठाएगा
+app.use(express.static(__dirname));
 
+// होम पेज का सही रास्ता
 app.get('/', (req, res) => {
-  res.sendFile(path.join(publicDir, 'index.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
+// एडमिन पेज का सही रास्ता
 app.get('/admin', (req, res) => {
-  res.sendFile(path.join(publicDir, 'admin.html'));
+    res.sendFile(path.join(__dirname, 'admin.html'));
 });
 
 app.get('/download', (req, res) => {
