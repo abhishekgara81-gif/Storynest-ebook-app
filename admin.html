@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StoryNest Admin</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="admin-body">
+    <header class="admin-header">
+      <div class="container admin-nav">
+        <div>
+          <p class="eyebrow">Dashboard</p>
+          <h1>Subscribers</h1>
+        </div>
+        <a href="/" class="btn btn-primary">Back to landing page</a>
+      </div>
+    </header>
+
+    <main class="container admin-main">
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Subscribers</h2>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Email</th>
+                <th>Signed up</th>
+              </tr>
+            </thead>
+            <tbody id="subscribersTable">
+              <tr>
+                <td colspan="3">Loading subscribers...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Contact Messages</h2>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Message</th>
+                <th>Submitted</th>
+              </tr>
+            </thead>
+            <tbody id="messagesTable">
+              <tr>
+                <td colspan="4">Loading messages...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
